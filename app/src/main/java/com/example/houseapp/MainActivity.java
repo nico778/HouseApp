@@ -23,13 +23,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (!isSwitchOn) {
-                    wifiButton.setText("Turn On");
+                    wifiButton.setText("START CHARGING");
                     wifiButton.setTextColor(Color.parseColor("white"));
                     wifiButton.setBackgroundColor(Color.parseColor("#36BD31"));
                     ledImage.setImageResource(R.mipmap.charge_off);
                     isSwitchOn=true;
                 }else{
-                    wifiButton.setText("Turn Off");
+                    wifiButton.setText("STOP CHARGING");
                     wifiButton.setTextColor(Color.parseColor("white"));
                     wifiButton.setBackgroundColor(Color.parseColor("red"));
                     ledImage.setImageResource(R.mipmap.charge_on);
